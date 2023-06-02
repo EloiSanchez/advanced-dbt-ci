@@ -1,6 +1,6 @@
 # Jaffle Shop template
 
-I use this in order to create a new dbt project with the jaffle_shop models that you would build in the dbt fundamentals.
+I use this in order to create a new dbt project with the jaffle_shop models that you would build in the dbt fundamentals. It includes the models and seeds from the [dbt jaffle_shop project](https://github.com/dbt-labs/jaffle_shop) but adds the analyses, macros, tests, ... directories that you get when you initialize a dbt project in dbt Cloud
 
 ### Checks
 
