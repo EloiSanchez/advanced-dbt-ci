@@ -5,7 +5,10 @@ with source as (
     our data in this project
     #}
     {# select * from {{ ref('raw_payments') }} #}
-    select * from {{ source('stripe', 'payments') }}
+    select * exclude (orderid, paymentmethod),
+    orderid as order_id,
+    paymentmethod as payment_method
+    from {{ source('stripe', 'payment') }}
 
 ),
 
