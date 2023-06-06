@@ -1,0 +1,11 @@
+version: 2
+
+seeds:
+  - name: raw_customers
+    description: Local version of source for customers
+
+  - name: raw_orders
+    description: Local version of source for orders
+
+  - name: raw_payments
+    description: Local version of source for payments

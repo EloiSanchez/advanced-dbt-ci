@@ -4,3 +4,7 @@ dbt_packages/
 logs/
 
 profiles.yml
+
+__pycache__
+.vscode
+.pytest*

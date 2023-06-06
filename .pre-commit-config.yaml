@@ -11,3 +11,15 @@ repos:
     rev: v0.18.1
     hooks:
     -   id: sqlfmt
+-   repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+    -   id: black
+-   repo: local
+    hooks:
+    -   id: pytest-catalog-json
+        name: pytest-catalog-json
+        entry: pytest ./tests/pytest -m catalog_json
+        language: system
+        pass_filenames: false
+        always_run: true
